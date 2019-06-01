@@ -8,14 +8,11 @@ const Tabs = props => {
         {props.tabs.map((t, i) => (
           <Tab
             key={i}
-            selectedTabHandler={props.selectTabHandler}
-            selectedTab={props.selectedTab}
             tab={t}
+            selectTabHandler={props.selectTabHandler}
+            selectedTab={props.selectedTab}
           />
         ))}
-        {/* /* map over the tabs provided on your props, create a new Tab component
-        for each one. give the tab component a `selectTabHandler`, the
-        `selectedTab`, and the `tab` itself as props*/}
       </div>
     </div>
   );
